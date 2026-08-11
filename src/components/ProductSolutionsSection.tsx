@@ -47,7 +47,7 @@ export default function ProductSolutionsSection() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="inline-flex items-center gap-3 border border-white/10 px-4 py-2 rounded-full glass self-start mb-8 shadow-[0_0_15px_rgba(255,255,255,0.05)]"
           >
@@ -56,7 +56,7 @@ export default function ProductSolutionsSection() {
           <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="font-black text-4xl sm:text-5xl md:text-6xl uppercase tracking-tighter text-white leading-none mb-6"
           >
@@ -79,7 +79,7 @@ export default function ProductSolutionsSection() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <AnimatePresence>
             {allProducts.slice(0, visibleCount).map((product, index) => (
@@ -91,37 +91,29 @@ export default function ProductSolutionsSection() {
                 transition={{ duration: 0.5, delay: (index % 12) * 0.05 }}
                 className="h-full"
               >
-                <Link 
-                  href={product.href}
-                  className="flex flex-col h-full bg-[#080808] border border-white/5 p-5 group rounded-2xl relative overflow-hidden transition-colors hover:border-primary/50"
+                <div 
+                  className="flex flex-col h-full bg-[#080808] border border-white/5 p-5 rounded-2xl relative overflow-hidden"
                 >
-                  <div className="absolute inset-0 bg-primary/0 opacity-0 group-hover:opacity-5 transition-opacity duration-700 pointer-events-none z-10"></div>
-                  
                   <div className="relative w-full h-48 mb-8 rounded-xl overflow-hidden bg-[#0F0F0F] flex items-center justify-center p-4">
                     <Image 
                       src={product.image} 
                       alt={product.title}
                       fill
-                      className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-[0.16,1,0.3,1] filter brightness-90 contrast-125 group-hover:brightness-100 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
+                      className="object-contain p-4 filter brightness-90 contrast-125 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
                       unoptimized
                     />
                   </div>
                   
                   <div className="px-2 flex-grow flex flex-col relative z-20">
-                    <h3 className="font-headline-sm text-lg font-bold text-white mb-3 group-hover:text-primary transition-colors tracking-tight">
+                    <h3 className="font-headline-sm text-lg font-bold text-white mb-3 tracking-tight">
                       {product.title}
                     </h3>
                     
-                    <p className="font-body-md text-sm text-white/40 mb-8 group-hover:text-white/70 transition-colors flex-grow font-light">
+                    <p className="font-body-md text-sm text-white/40 mb-2 flex-grow font-light">
                       {product.description}
                     </p>
-                    
-                    <div className="mt-auto flex items-center gap-2 text-primary md:text-white/40 font-label-caps text-[10px] uppercase md:group-hover:text-primary transition-colors tracking-[0.2em]">
-                      VIEW SPECS
-                      <span className="material-symbols-outlined text-sm transform translate-x-1 md:translate-x-0 md:group-hover:translate-x-1 transition-transform">east</span>
-                    </div>
                   </div>
-                </Link>
+                </div>
               </motion.div>
             ))}
           </AnimatePresence>

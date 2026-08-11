@@ -67,7 +67,7 @@ export default function IndustriesSection() {
           <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="font-black text-4xl sm:text-5xl md:text-6xl uppercase tracking-tighter text-white"
           >

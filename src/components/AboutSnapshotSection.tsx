@@ -18,7 +18,7 @@ export default function AboutSnapshotSection() {
           <motion.div 
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h2 className="font-headline-md text-headline-md text-on-surface uppercase border-l-[3px] border-primary-container pl-5 mb-8 tracking-tight">
@@ -44,7 +44,7 @@ export default function AboutSnapshotSection() {
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="relative w-full h-[500px] rounded-[24px] overflow-hidden border border-[rgba(255,255,255,0.08)] group"
           >

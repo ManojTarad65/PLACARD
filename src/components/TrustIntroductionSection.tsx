@@ -24,7 +24,7 @@ export default function TrustIntroductionSection() {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="inline-flex items-center gap-3 border border-black/10 px-4 py-2 rounded-full bg-gray-50 self-start mb-8 shadow-sm"
             >
@@ -35,7 +35,7 @@ export default function TrustIntroductionSection() {
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="font-black text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] uppercase tracking-tighter text-black leading-[0.95]"
             >
@@ -50,7 +50,7 @@ export default function TrustIntroductionSection() {
             <motion.p 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="font-body-lg text-xl md:text-2xl text-black/60 leading-relaxed font-light"
             >
@@ -60,7 +60,7 @@ export default function TrustIntroductionSection() {
             <motion.div 
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="pt-8 border-t border-black/10"
             >

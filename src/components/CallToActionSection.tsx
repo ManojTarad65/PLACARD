@@ -65,7 +65,7 @@ export default function CallToActionSection() {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center mb-8 glass-card"
         >
@@ -76,7 +76,7 @@ export default function CallToActionSection() {
         <motion.h2 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase leading-[0.95] tracking-tighter text-white mb-8"
         >
@@ -90,7 +90,7 @@ export default function CallToActionSection() {
         <motion.p 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className="font-body-lg text-lg md:text-2xl text-white/50 mb-16 max-w-2xl mx-auto font-light leading-relaxed"
         >
@@ -100,7 +100,7 @@ export default function CallToActionSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
         >
           <Link href="/contact-us" className="group relative inline-flex items-center justify-center bg-white text-black px-12 py-6 font-label-caps tracking-[0.2em] uppercase font-bold overflow-hidden hover:text-white transition-colors duration-500">
