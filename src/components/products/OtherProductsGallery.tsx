@@ -27,7 +27,7 @@ const allProducts = productImages.map((img, i) => ({
   href: "#",
 }));
 
-export default function ProductSolutionsSection() {
+export default function OtherProductsSection() {
   const [visibleCount, setVisibleCount] = useState(12);
 
   const loadMore = () => {
@@ -37,44 +37,24 @@ export default function ProductSolutionsSection() {
   const hasMore = visibleCount < allProducts.length;
 
   return (
-    <section className="relative w-full bg-[#050505] py-24 md:py-32 overflow-hidden border-b border-white/5">
+    <section id="other-products" className="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-[#030303] relative z-10 border-b border-white/5">
       <div className="absolute inset-0 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay"></div>
       
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-20">
-        
-        {/* Header Area matching original ProductSolutionsSection */}
-        <div className="mb-16">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="inline-flex items-center gap-3 border border-white/10 px-4 py-2 rounded-full glass self-start mb-8 shadow-[0_0_15px_rgba(255,255,255,0.05)]"
-          >
-            <span className="font-label-caps text-[11px] text-white/70 tracking-[0.2em] font-semibold uppercase">PLATFORM OVERVIEW</span>
-          </motion.div>
-          <motion.h2 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="font-black text-4xl sm:text-5xl md:text-6xl uppercase tracking-tighter text-white leading-none mb-6"
-          >
-            ENGINEERED FOR <br/>
-            <span className="text-white/30">EVERY POWER CHALLENGE.</span>
-          </motion.h2>
-          
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-             <p className="font-body-lg text-body-lg text-white/50 font-light leading-relaxed max-w-2xl">
+      <div className="max-w-container-max mx-auto relative z-20">
+        <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div className="max-w-2xl">
+            <h2 className="font-headline-md text-headline-md text-white uppercase border-l-[3px] border-primary pl-6 mb-6">
+              Full Product Range
+            </h2>
+            <p className="font-body-lg text-body-lg text-white/50 font-light leading-relaxed">
               Explore our extensive catalog of specialized electrical infrastructure, built to the same exacting standards of reliability and performance.
             </p>
-            <div className="inline-flex items-center gap-3 text-white/70 font-label-caps text-[11px] tracking-[0.2em] uppercase">
-              {allProducts.length} PRODUCTS AVAILABLE
-            </div>
+          </div>
+          <div className="inline-flex items-center gap-3 text-white/70 font-label-caps text-[11px] tracking-[0.2em] uppercase">
+            {allProducts.length} PRODUCTS AVAILABLE
           </div>
         </div>
 
-        {/* The 44-Image Masonry Grid */}
         <motion.div 
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
           initial="hidden"

@@ -129,8 +129,8 @@ export default function HeroSection() {
           
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-6 mt-4 w-full sm:w-auto">
             {/* Primary Sharp CTA */}
-            <Link href="#solutions" className="group relative inline-flex items-center justify-center bg-primary text-white px-8 py-4 w-full sm:w-auto overflow-hidden rounded-sm transition-all hover:shadow-[0_0_40px_-10px_rgba(225,29,72,0.5)]">
-              <div className="absolute inset-0 bg-white/20 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-[0.16,1,0.3,1] z-0"></div>
+            <Link href="#solutions" className="group relative inline-flex items-center justify-center bg-primary text-black px-8 py-4 w-full sm:w-auto overflow-hidden rounded-sm transition-all hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]">
+              <div className="absolute inset-0 bg-black/10 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-[0.16,1,0.3,1] z-0"></div>
               
               <div className="relative z-10 flex items-center gap-3">
                 <span className="font-label-caps text-xs tracking-[0.2em] uppercase font-bold">DISCOVER PLATFORMS</span>

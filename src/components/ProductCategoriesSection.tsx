@@ -28,12 +28,6 @@ const categories = [
     description: "High-grade wires and cables built for stable transmission, safety, and long service life.",
     image: "/images/products/wires.png",
     href: "/products/wires-and-cables",
-  },
-  {
-    title: "Switchgear",
-    description: "Heavy-duty power distribution components designed for mission-critical loads.",
-    image: "/images/products/switchgear.png",
-    href: "/products/switchgear",
   }
 ];
 

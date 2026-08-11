@@ -144,7 +144,7 @@ export default function TopNavBar() {
               
               <div className="mt-auto pt-12">
                 <Link href="/contact-us" onClick={() => setIsMobileMenuOpen(false)} className="block w-full">
-                  <button className="w-full bg-primary text-white font-label-caps text-[11px] tracking-[0.15em] font-medium uppercase px-6 py-4 hover:bg-white hover:text-black transition-all duration-300 rounded-sm">
+                  <button className="w-full bg-primary text-black font-label-caps text-[11px] tracking-[0.15em] font-bold uppercase px-6 py-4 hover:bg-white/80 transition-all duration-300 rounded-sm">
                     Contact Sales
                   </button>
                 </Link>
