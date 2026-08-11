@@ -73,7 +73,7 @@ export default function HeroSection() {
   return (
     <section 
       onMouseMove={handleMouseMove}
-      className="relative w-full min-h-[100svh] flex flex-col justify-end bg-background overflow-hidden selection:bg-primary selection:text-white"
+      className="relative w-full min-h-[100svh] flex flex-col justify-end bg-background overflow-hidden selection:bg-white selection:text-black"
     >
       
       {/* Background Ambience */}

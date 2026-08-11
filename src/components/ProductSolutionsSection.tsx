@@ -60,13 +60,13 @@ export default function ProductSolutionsSection() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="font-black text-4xl sm:text-5xl md:text-6xl uppercase tracking-tighter text-white leading-none mb-6"
           >
-            ENGINEERED FOR <br/>
-            <span className="text-white/30">EVERY POWER CHALLENGE.</span>
+            ESSENTIAL COMPONENTS. <br/>
+            <span className="text-white/30">ENGINEERED TO LAST.</span>
           </motion.h2>
           
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
              <p className="font-body-lg text-body-lg text-white/50 font-light leading-relaxed max-w-2xl">
-              Explore our extensive catalog of specialized electrical infrastructure, built to the same exacting standards of reliability and performance.
+              Explore our complete range of architectural-grade modular switches, robust metal gang boxes, and premium holders designed for clean installations and lifelong durability.
             </p>
             <div className="inline-flex items-center gap-3 text-white/70 font-label-caps text-[11px] tracking-[0.2em] uppercase">
               {allProducts.length} PRODUCTS AVAILABLE

@@ -31,7 +31,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-background text-on-background font-inter selection:bg-primary selection:text-white">
+      <body className="min-h-screen flex flex-col bg-background text-on-background font-inter selection:bg-white selection:text-black">
         <TopNavBar />
         <main className="flex-grow">
           {children}

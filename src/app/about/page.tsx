@@ -7,7 +7,7 @@ import LeadershipMessage from "@/components/about/LeadershipMessage";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col font-body-md antialiased bg-black selection:bg-primary selection:text-white">
+    <div className="min-h-screen flex flex-col font-body-md antialiased bg-black selection:bg-white selection:text-black">
       <main className="flex-grow">
         <AboutHero />
         <MissionVision />
