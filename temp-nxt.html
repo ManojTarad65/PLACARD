@@ -1,0 +1,231 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nxt Series - PLACARD ELECTRIC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;family=Inter:wght@600&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#121315",
+                      "on-secondary-fixed": "#001e31",
+                      "on-secondary": "#003351",
+                      "on-tertiary": "#00344e",
+                      "on-primary-fixed-variant": "#633f00",
+                      "secondary-container": "#0098e3",
+                      "surface-variant": "#343537",
+                      "surface-container-lowest": "#0d0e10",
+                      "on-error": "#690005",
+                      "on-tertiary-fixed": "#001e2f",
+                      "surface-dim": "#121315",
+                      "brand-red": "#ED1C24",
+                      "surface-panel": "#1A1C1F",
+                      "outline": "#9e8e7c",
+                      "tertiary": "#a9d9ff",
+                      "on-error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#8ccdff",
+                      "inverse-on-surface": "#303033",
+                      "error-container": "#93000a",
+                      "secondary-fixed": "#cce5ff",
+                      "tertiary-container": "#62c0ff",
+                      "on-secondary-container": "#002c47",
+                      "inverse-surface": "#e3e2e4",
+                      "on-secondary-fixed-variant": "#004b73",
+                      "on-primary-container": "#664000",
+                      "on-tertiary-container": "#004d72",
+                      "surface-tint": "#ffb956",
+                      "primary-fixed": "#ffddb5",
+                      "primary-fixed-dim": "#ffb956",
+                      "on-primary-fixed": "#2a1800",
+                      "border-hairline": "#2A2C2F",
+                      "tertiary-fixed": "#cae6ff",
+                      "error": "#ffb4ab",
+                      "surface-container": "#1f2022",
+                      "on-tertiary-fixed-variant": "#004b6f",
+                      "secondary-fixed-dim": "#92ccff",
+                      "surface-container-highest": "#343537",
+                      "primary-container": "#f2a93b",
+                      "on-surface-variant": "#d6c3af",
+                      "surface-container-low": "#1b1c1e",
+                      "primary": "#ffca85",
+                      "outline-variant": "#514535",
+                      "surface-bright": "#38393b",
+                      "text-muted": "#9B9C9E",
+                      "on-surface": "#e3e2e4",
+                      "secondary": "#92ccff",
+                      "surface": "#121315",
+                      "on-background": "#e3e2e4",
+                      "on-primary": "#452b00",
+                      "inverse-primary": "#835400",
+                      "text-primary": "#F5F5F3",
+                      "surface-container-high": "#292a2c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "grid-margin": "24px",
+                      "stack-md": "12px",
+                      "gutter": "16px",
+                      "stack-lg": "24px",
+                      "stack-sm": "4px",
+                      "section-gap": "80px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "label-caps": ["Inter"],
+                      "code-spec": ["IBM Plex Sans"],
+                      "display-lg": ["Sora"],
+                      "body-lg": ["IBM Plex Sans"],
+                      "display-lg-mobile": ["Sora"],
+                      "body-md": ["IBM Plex Sans"],
+                      "headline-md": ["Sora"]
+              },
+              "fontSize": {
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "code-spec": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 border-b border-border-hairline bg-background transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center w-full px-grid-margin py-4 mx-auto max-w-full">
+<div class="font-display-lg text-display-lg font-bold text-primary tracking-tighter">PLACARD ELECTRIC</div>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.3)] transition-all" href="#">Industrial</a>
+<a class="text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.3)] transition-all" href="#">Commercial</a>
+<a class="text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.3)] transition-all" href="#">IoT Systems</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps hover:text-primary hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.3)] transition-all" href="#">Engineering</a>
+<a class="text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-primary hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.3)] transition-all" href="#">Support</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center justify-center bg-primary-container text-black font-label-caps text-label-caps px-4 py-2 rounded transition-all hover:shadow-[0_0_12px_rgba(242,169,59,0.3)]">
+                    Request Quote
+                </button>
+<div class="flex gap-2 text-primary">
+<span class="material-symbols-outlined cursor-pointer hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.3)]">settings_input_component</span>
+<span class="material-symbols-outlined cursor-pointer hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.3)]">language</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-[88px] pb-section-gap px-grid-margin w-full max-w-7xl mx-auto flex flex-col gap-section-gap">
+<!-- Hero Section -->
+<section class="flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="flex-1 space-y-stack-md">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Nxt Series</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Precision engineered for the future of industrial power distribution. 
+                    The Nxt Series defines rugged reliability with advanced IoT integration.
+                </p>
+</div>
+<div class="flex-1 w-full h-[400px] bg-surface-panel rounded-lg border border-border-hairline overflow-hidden relative">
+<img class="object-cover w-full h-full opacity-80" data-alt="A high-contrast, dramatic studio shot of a massive industrial electrical panel. The panel is constructed from matte black steel with precise brushed aluminum accents. Intricate wiring and heavy-duty breakers are visible through a protective transparent shield. Subtle amber LED indicators glow, suggesting a live, powerful system. Deep shadows and high key rim lighting enhance the premium industrial aesthetic, fitting for a pro-grade dark mode UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3F4VB9VxTTRo39dY5G-l-zhwM4YTicxNKNWXfhMX2rTRHSFNwx9jkNF2LH1vU4c1fjRtvkx_IjPacU0p6GSLKl8OxNVu3CcygGR2AYemUor_nd_9vQ95jEkv7PMi4VSmySFa3-c7S3YnOX07oZn4kJOEvN7DI7jwC77cvFHaEUbRVCL88eWT5HTSVL8FLpwk6Qj-aPkNHTsV3HBoJ5slLzrlMrdNYFBwBSV1_x8PRLYQswSKxLnuXbw">
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
+</div>
+</section>
+<!-- Product Grid -->
+<section>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-lg border-b border-border-hairline pb-stack-sm">Technical Specifications</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- X4 Card -->
+<div class="bg-surface-panel border border-border-hairline rounded-lg p-stack-lg flex flex-col gap-stack-md hover:border-primary-container transition-colors group">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">X4 Series</h3>
+<span class="material-symbols-outlined text-primary-container opacity-50 group-hover:opacity-100 group-hover:drop-shadow-[0_0_12px_rgba(242,169,59,0.5)] transition-all">electric_bolt</span>
+</div>
+<div class="h-48 rounded bg-surface border border-border-hairline overflow-hidden mb-stack-sm">
+<img class="object-cover w-full h-full opacity-70 group-hover:opacity-100 transition-opacity" data-alt="A close-up, precision-focused image of a compact industrial electrical breaker component (X4 Series). The component is housed in deep black synthetic casing with sharp, clean edges. It features small, highly legible white technical specifications printed on its surface. A single, glowing amber indicator light is active. The lighting is sterile and analytical, emphasizing the pristine, engineered quality of the product against a dark gray background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7RVL-TFwX5N-Qk7LrzddvK2vpU7gbIGNcUaIyrGku4Z8yEmhcphdofFXexulVGjQzicWEnsMauMYBM6hYlr8-1RIQJO8wvtGEIm1JXSEk2vZop88RTfqcpeAHD4id7vLRrXphHqyFTX_0QVE2DFfQ9tf7s7evxUukXw_nkpaMzpMIK_cPT8Pw3S119oYSfGcLG6XS9676rPIdmtQgcfqBjI5OlQsiP7duiMTo2xQdcPQfwI2x1BBUpw">
+</div>
+<ul class="font-code-spec text-code-spec text-on-surface-variant space-y-stack-sm flex-grow">
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Voltage</span> <span class="text-on-surface">480V AC</span></li>
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Amperage</span> <span class="text-on-surface">100A - 400A</span></li>
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Poles</span> <span class="text-on-surface">3</span></li>
+</ul>
+<button class="mt-auto w-full py-2 border border-border-hairline rounded text-text-primary font-label-caps text-label-caps hover:border-primary-container hover:text-primary-container hover:drop-shadow-[0_0_8px_rgba(242,169,59,0.2)] transition-all">
+                        View Details
+                    </button>
+</div>
+<!-- X5 Card -->
+<div class="bg-surface-panel border border-border-hairline rounded-lg p-stack-lg flex flex-col gap-stack-md hover:border-primary-container transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary-container text-black font-label-caps text-[10px] px-2 py-1 rounded-bl">IOT ENABLED</div>
+<div class="flex justify-between items-center mt-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">X5 Series</h3>
+<span class="material-symbols-outlined text-secondary opacity-80 group-hover:drop-shadow-[0_0_12px_rgba(146,204,255,0.5)] transition-all">sensors</span>
+</div>
+<div class="h-48 rounded bg-surface border border-border-hairline overflow-hidden mb-stack-sm">
+<img class="object-cover w-full h-full opacity-70 group-hover:opacity-100 transition-opacity" data-alt="A detailed, macro view of the X5 Series electrical distribution block. The block is robust, made of matte black material with exposed, heavy-duty copper connection points. A digital interface is integrated into the side, displaying crisp, blue status metrics indicating IoT connectivity. The lighting is moody and cinematic, with soft blue and amber rim lights highlighting the industrial textures and advanced technology integration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrvDk4P0S5LJioWTBuiHw1UhJlzG2jTzS7ziIAEOwbCPS2Z-7ApqPN0qEVXoeHMGroNl6G11R3JLaZrviUv9T-1CUpc8vTHIMKeUmNWNVXJ4JAtxx7PXQgLR_E1oTgSgWh_pqLz0tmNFUUpY-QY9WTXwdhKAwnglf5p6e3gLghAdn8uTHTXlUF-2ZIBFm2AeG1kMlMyEQKMpDpRds2WshuQQq8O-Ui5OgfnAYm0tdJcxe-lMsYCiS3sQ">
+</div>
+<ul class="font-code-spec text-code-spec text-on-surface-variant space-y-stack-sm flex-grow">
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Voltage</span> <span class="text-on-surface">600V AC</span></li>
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Amperage</span> <span class="text-on-surface">400A - 800A</span></li>
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Connectivity</span> <span class="text-secondary">Ethernet/Wi-Fi</span></li>
+</ul>
+<button class="mt-auto w-full py-2 border border-border-hairline rounded text-text-primary font-label-caps text-label-caps hover:border-primary-container hover:text-primary-container hover:drop-shadow-[0_0_8px_rgba(242,169,59,0.2)] transition-all">
+                        View Details
+                    </button>
+</div>
+<!-- X6 Card -->
+<div class="bg-surface-panel border border-border-hairline rounded-lg p-stack-lg flex flex-col gap-stack-md hover:border-primary-container transition-colors group">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">X6 Series</h3>
+<span class="material-symbols-outlined text-brand-red opacity-80 group-hover:drop-shadow-[0_0_12px_rgba(237,28,36,0.5)] transition-all">warning</span>
+</div>
+<div class="h-48 rounded bg-surface border border-border-hairline overflow-hidden mb-stack-sm">
+<img class="object-cover w-full h-full opacity-70 group-hover:opacity-100 transition-opacity" data-alt="A formidable, wide-angle shot of the X6 Series heavy-duty industrial switchgear unit. The massive unit dominates the frame, constructed from thick, dark grey steel panels. It features large, robust locking mechanisms and prominent safety warnings. The environment is a dimly lit, vast industrial facility. Harsh, directional light cuts across the unit, emphasizing its rugged, uncompromising build quality designed for extreme environments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTxxfuzQmx4pO_wqgdoKztyv5giB9Z152yI7NMWM2jp-yfy_02NVX2H7NYbr0JOmmTII-XB6H_mwNuxLBOoRr7kIttWeps8LJdi9c5Hi5kUhyygxSURhp7slc_7XYDeiT1Koar6MvrvCDGqghQhxiJfmfWbcWz9ayk35ok1hC_3oBZX4zYOkIO-UYfv_eyjZt5LBd-aS7HKStSHB6Dfw7AlCA-Kf0pGNCf4IYanfeFkr3D2B7kQHN4iQ">
+</div>
+<ul class="font-code-spec text-code-spec text-on-surface-variant space-y-stack-sm flex-grow">
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Voltage</span> <span class="text-on-surface">1000V AC</span></li>
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Amperage</span> <span class="text-on-surface">800A - 2000A</span></li>
+<li class="flex justify-between border-b border-border-hairline pb-1"><span>Protection</span> <span class="text-on-surface">NEMA 4X</span></li>
+</ul>
+<button class="mt-auto w-full py-2 border border-border-hairline rounded text-text-primary font-label-caps text-label-caps hover:border-primary-container hover:text-primary-container hover:drop-shadow-[0_0_8px_rgba(242,169,59,0.2)] transition-all">
+                        View Details
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bottom-0 border-t border-border-hairline bg-surface-container-lowest transition-opacity duration-200">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-grid-margin py-section-gap w-full max-w-7xl mx-auto">
+<div class="flex flex-col gap-stack-md">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">PLACARD ELECTRIC</span>
+<p class="font-body-md text-body-md text-text-muted mt-4 text-sm">
+                    © 2024 PLACARD ELECTRIC. Precision Engineered. ISO 9001:2015 &amp; ISO 14001 Certified.
+                </p>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Resources</h4>
+<a class="font-body-md text-body-md text-text-muted font-normal hover:text-primary transition-colors" href="#">Compliance</a>
+<a class="font-body-md text-body-md text-text-muted font-normal hover:text-primary transition-colors" href="#">Technical Data</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Network</h4>
+<a class="font-body-md text-body-md text-text-muted font-normal hover:text-primary transition-colors" href="#">Global Distribution</a>
+<a class="font-body-md text-body-md text-text-muted font-normal hover:text-primary transition-colors" href="#">Safety Standards</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Legal</h4>
+<a class="font-body-md text-body-md text-text-muted font-normal hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
