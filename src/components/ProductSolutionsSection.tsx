@@ -73,7 +73,7 @@ export default function ProductSolutionsSection() {
             className="group relative flex flex-col md:flex-row items-stretch md:items-center border-b border-white/5 last:border-0 overflow-hidden hover:bg-white/[0.02] transition-colors duration-500"
           >
             {/* Background Hover Image & Overlay */}
-            <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 md:group-hover:opacity-20 transition-opacity duration-700 ease-[0.16,1,0.3,1] pointer-events-none">
+            <div className="absolute inset-0 z-0 opacity-10 md:opacity-0 md:group-hover:opacity-20 transition-opacity duration-700 ease-[0.16,1,0.3,1] pointer-events-none">
               <Image 
                 src={solution.image} 
                 alt={solution.title} 
@@ -85,7 +85,7 @@ export default function ProductSolutionsSection() {
             </div>
 
             {/* Glowing Accent Line */}
-            <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 z-20 shadow-[0_0_20px_rgba(255,255,255,0.8)]"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary scale-y-100 md:scale-y-0 md:group-hover:scale-y-100 origin-top transition-transform duration-500 z-20 shadow-[0_0_20px_rgba(255,255,255,0.8)]"></div>
 
             {/* Content Container */}
             <div className="relative z-10 w-full flex flex-col md:flex-row md:items-center py-12 md:py-16 px-margin-mobile md:px-margin-desktop transition-transform duration-500 group-hover:translate-x-4">
@@ -105,7 +105,7 @@ export default function ProductSolutionsSection() {
                 <p className="font-body-md text-white/40 group-hover:text-white/80 text-lg mb-4 transition-colors duration-300 font-light leading-relaxed">
                   {solution.description}
                 </p>
-                <div className="flex flex-wrap gap-3 overflow-hidden max-h-0 opacity-0 group-hover:max-h-[100px] group-hover:opacity-100 transition-all duration-700 ease-[0.16,1,0.3,1]">
+                <div className="flex flex-wrap gap-3 overflow-hidden max-h-[100px] opacity-100 md:max-h-0 md:opacity-0 md:group-hover:max-h-[100px] md:group-hover:opacity-100 transition-all duration-700 ease-[0.16,1,0.3,1]">
                   {solution.specs.map((spec, sIdx) => (
                     <span key={sIdx} className="font-label-caps text-[10px] tracking-[0.2em] uppercase border border-white/10 glass text-white/70 px-3 py-1.5 rounded-sm">
                       {spec}
@@ -114,7 +114,7 @@ export default function ProductSolutionsSection() {
                 </div>
               </div>
               {/* Action */}
-              <div className="md:w-2/12 flex md:justify-end items-center opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0">
+              <div className="md:w-2/12 flex md:justify-end items-center mt-4 md:mt-0 opacity-100 translate-x-0 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500 md:-translate-x-4 md:group-hover:translate-x-0">
                 <span className="font-label-caps text-[11px] tracking-[0.2em] text-primary uppercase font-bold flex items-center gap-2">
                   EXPLORE PLATFORM
                   <span className="material-symbols-outlined text-[16px]">east</span>

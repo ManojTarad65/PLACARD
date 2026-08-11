@@ -102,9 +102,9 @@ export default function OtherProductsSection() {
                     {product.description}
                   </p>
                   
-                  <div className="mt-auto flex items-center gap-2 text-white/40 font-label-caps text-[10px] uppercase group-hover:text-primary transition-colors tracking-[0.2em]">
+                  <div className="mt-auto flex items-center gap-2 text-primary md:text-white/40 font-label-caps text-[10px] uppercase md:group-hover:text-primary transition-colors tracking-[0.2em]">
                     VIEW DETAILS
-                    <span className="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform">east</span>
+                    <span className="material-symbols-outlined text-sm transform translate-x-1 md:translate-x-0 md:group-hover:translate-x-1 transition-transform">east</span>
                   </div>
                 </div>
               </Link>

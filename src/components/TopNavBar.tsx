@@ -123,7 +123,7 @@ export default function TopNavBar() {
         {isMobileMenuOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "100vh", opacity: 1 }}
+            animate={{ height: "100svh", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="md:hidden fixed top-0 left-0 w-full bg-black/95 backdrop-blur-3xl z-40 overflow-y-auto"

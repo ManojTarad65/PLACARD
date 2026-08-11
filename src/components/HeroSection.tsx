@@ -73,7 +73,7 @@ export default function HeroSection() {
   return (
     <section 
       onMouseMove={handleMouseMove}
-      className="relative w-full min-h-screen flex flex-col justify-end bg-background overflow-hidden selection:bg-primary selection:text-white"
+      className="relative w-full min-h-[100svh] flex flex-col justify-end bg-background overflow-hidden selection:bg-primary selection:text-white"
     >
       
       {/* Background Ambience */}
@@ -190,7 +190,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ delay: 1.2, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute top-[20%] right-[-5%] lg:right-[5%] z-20 glass-panel px-5 py-4 rounded-xl flex flex-col w-[200px]"
+              className="absolute top-4 sm:top-[20%] right-0 sm:right-[-5%] lg:right-[5%] z-20 glass-panel px-4 sm:px-5 py-3 sm:py-4 rounded-xl flex flex-col w-[160px] sm:w-[200px]"
             >
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_rgba(225,29,72,0.8)]"></div>
@@ -213,7 +213,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: -30, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ delay: 1.4, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute bottom-[15%] left-[-5%] lg:left-[5%] z-20 glass-panel px-5 py-4 rounded-xl flex flex-col w-[180px]"
+              className="absolute bottom-4 sm:bottom-[15%] left-0 sm:left-[-5%] lg:left-[5%] z-20 glass-panel px-4 sm:px-5 py-3 sm:py-4 rounded-xl flex flex-col w-[150px] sm:w-[180px]"
             >
                <span className="font-label-caps text-[10px] text-text-muted tracking-[0.2em] mb-1">INTEGRATION</span>
                <span className="font-headline-sm text-[15px] text-white font-bold uppercase tracking-wider">IoT Smart Grid Ready</span>
