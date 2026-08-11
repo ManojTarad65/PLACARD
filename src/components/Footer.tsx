@@ -10,11 +10,11 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto relative z-10">
         <div className="col-span-1 md:col-span-2 flex flex-col items-start">
           <Image
-            src="/images/placard_logo_real.svg"
+            src="/images/logo.png"
             alt="PLACARD Logo"
             width={160}
             height={60}
-            className="w-auto h-8 object-contain mb-8 filter brightness-0 invert opacity-90"
+            className="w-auto h-8 object-contain mb-8 opacity-90"
           />
           <p className="text-white/40 font-body-sm max-w-sm font-light leading-relaxed">
             Welcome to Placard, where we specialize in manufacturing exceptional products exclusively crafted for modern homes, offices, and industries.

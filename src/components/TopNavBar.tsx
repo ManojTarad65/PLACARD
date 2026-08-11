@@ -35,11 +35,11 @@ export default function TopNavBar() {
           href="/"
         >
           <Image
-            src="/images/placard_logo_real.svg"
+            src="/images/logo.png"
             alt="PLACARD Logo"
             width={240}
             height={90}
-            className={`w-auto object-contain transition-all duration-500 rounded-sm filter brightness-0 invert ${scrolled ? 'h-7 md:h-9' : 'h-8 md:h-10'}`}
+            className={`w-auto object-contain transition-all duration-500 rounded-sm ${scrolled ? 'h-7 md:h-9' : 'h-8 md:h-10'}`}
           />
         </Link>
         

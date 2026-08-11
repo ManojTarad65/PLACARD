@@ -1,39 +1,62 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function MissionVision() {
   return (
-    <section className="max-w-7xl mx-auto px-grid-margin py-section-gap w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
-        {/* Mission Card */}
-        <div className="bg-surface-panel border border-border-hairline rounded-lg p-stack-lg flex flex-col gap-stack-md relative group overflow-hidden">
-          {/* Tech accent line */}
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-primary-container/0 via-primary-container/50 to-primary-container/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="w-12 h-12 flex items-center justify-center border border-border-hairline rounded bg-surface mb-2">
-            <span
-              className="material-symbols-outlined text-primary-container"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              my_location
-            </span>
-          </div>
-          <h2 className="font-headline-md text-headline-md text-text-primary">Our Mission</h2>
-          <p className="text-text-muted">
-            To manufacture uncompromising electrical solutions that ensure safety, efficiency, and continuous operation in the world&apos;s most demanding industrial and commercial environments.
-          </p>
-        </div>
-        {/* Vision Card */}
-        <div className="bg-surface-panel border border-border-hairline rounded-lg p-stack-lg flex flex-col gap-stack-md relative group overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-primary-container/0 via-primary-container/50 to-primary-container/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          <div className="w-12 h-12 flex items-center justify-center border border-border-hairline rounded bg-surface mb-2">
-            <span
-              className="material-symbols-outlined text-secondary"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              visibility
-            </span>
-          </div>
-          <h2 className="font-headline-md text-headline-md text-text-primary">Our Vision</h2>
-          <p className="text-text-muted">
-            To architect the future of smart infrastructure by integrating intelligent diagnostics into industrial-grade hardware, making every circuit visible, manageable, and secure.
-          </p>
+    <section className="relative w-full bg-white py-24 md:py-32 px-margin-mobile md:px-margin-desktop overflow-hidden border-b border-black/5">
+      <div className="max-w-container-max mx-auto relative z-10">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
+          
+          {/* Mission */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col"
+          >
+            <div className="mb-8">
+              <span className="font-label-caps text-[11px] tracking-[0.2em] text-black/40 uppercase font-bold border border-black/10 px-4 py-2 rounded-full">
+                01 — OUR MISSION
+              </span>
+            </div>
+            
+            <h2 className="font-black text-4xl sm:text-5xl uppercase tracking-tighter text-black leading-none mb-6">
+              MANUFACTURING <br/>
+              <span className="text-black/30">ABSOLUTE SAFETY.</span>
+            </h2>
+            
+            <p className="font-body-lg text-lg text-black/60 leading-relaxed font-light max-w-md">
+              To manufacture uncompromising electrical solutions that ensure safety, efficiency, and continuous operation in the world's most demanding industrial and commercial environments.
+            </p>
+          </motion.div>
+
+          {/* Vision */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col"
+          >
+            <div className="mb-8">
+              <span className="font-label-caps text-[11px] tracking-[0.2em] text-black/40 uppercase font-bold border border-black/10 px-4 py-2 rounded-full">
+                02 — OUR VISION
+              </span>
+            </div>
+            
+            <h2 className="font-black text-4xl sm:text-5xl uppercase tracking-tighter text-black leading-none mb-6">
+              ARCHITECTING <br/>
+              <span className="text-black/30">SMART INFRASTRUCTURE.</span>
+            </h2>
+            
+            <p className="font-body-lg text-lg text-black/60 leading-relaxed font-light max-w-md">
+              To integrate intelligent diagnostics into industrial-grade hardware, making every circuit visible, manageable, and secure for the next generation of smart cities.
+            </p>
+          </motion.div>
+
         </div>
       </div>
     </section>
