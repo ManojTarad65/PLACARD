@@ -72,7 +72,7 @@ export default function SwitchgearProductsGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {products.map((product) => (
             <Link 
-              href={`/products/switchgear/${product.id}`} 
+              href="#products" 
               key={product.id}
               className="group flex flex-col bg-surface-container hover:bg-surface-container-high transition-colors border border-outline hover:border-primary rounded-xl overflow-hidden h-full"
             >
